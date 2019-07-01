@@ -1,5 +1,4 @@
  ## Post Office User Interface
-This Project consists of following api's:
 
  ## Motivation
  The motivation behind this project to provide the software for newly constructed post offices in berlin due to its rapid growth .
