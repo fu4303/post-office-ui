@@ -15,7 +15,6 @@ import {
   Select,
   MenuItem,
   Grid,
-  Paper,
   InputLabel
 } from '@material-ui/core';
 import styles from '../ShipmentsTable/styles';

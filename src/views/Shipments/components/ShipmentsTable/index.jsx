@@ -6,7 +6,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 import PropTypes from 'prop-types';
 
 // Material helpers
-import { withStyles, Select, MenuItem, TextField } from '@material-ui/core';
+import { withStyles, MenuItem, TextField } from '@material-ui/core';
 import { Create as UpdateIcon, Delete as DeleteIcon } from '@material-ui/icons';
 
 // Material components
@@ -96,7 +96,7 @@ class ShipmentsTable extends Component {
         <MenuItem value={filterType.value} key={index}>{filterType.name}</MenuItem>
       );
     });
-
+      // eslint-disable-next-line
     const tableBody = shipments.map((shipment) => {
         let isShipmentValid = false;
         switch (filter.value) {
@@ -169,7 +169,6 @@ class ShipmentsTable extends Component {
       </TableRow>
           );
         }
-
       }
     );
 

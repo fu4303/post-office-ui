@@ -31,10 +31,6 @@ const styles = theme => ({
 
 class Container extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   createOrUpdateShipmentHandler = () => {
     const { actions } = this.props;
     actions.raiseAction(Actions.SUBMIT_CREATE_OR_UPDATE);
@@ -62,6 +58,8 @@ class Container extends Component {
         break;
       case 'status':
         createOrUpdateShipmentData.status = value;
+        break;
+      default:
         break;
     }
     actions.raiseAction(Actions.CREATE_SHIPMENT_DATA, { ...createOrUpdateShipmentData });

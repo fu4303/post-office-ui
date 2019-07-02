@@ -19,6 +19,8 @@ export default (store) => next => action => {
     case Actions.DELETE_SHIPMENT_DATA:
       deletePostOffice(store, action.payload);
       break;
+    default:
+      break;
   }
 }
 

@@ -46,6 +46,8 @@ class Container extends Component {
       case 'zipcode':
         createOrUpdatePostOfficeData.zipcode = value;
         break;
+      default:
+        break;
     }
     actions.raiseAction(Actions.CREATE_POST_OFFICE_DATA, { ...createOrUpdatePostOfficeData });
   }

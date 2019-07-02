@@ -17,6 +17,10 @@ export default (store) => next => action => {
     case Actions.DELETE_POST_OFFICE_DATA:
       deletePostOffice(store, action.payload);
       break;
+     default:
+      break;
+
+
   }
 }
 
